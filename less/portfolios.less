@@ -47,19 +47,16 @@
 }
 
 // flexbox for images in the carousel
+// use flex to hide margins between images and force them into one row
 .portfolios__carousel-list {
   display: flex;
   padding: 50px 0px 0px 0px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 // one image in the carousel
 .portfolios__carousel-item {
   display: inline-block;
-  width: 341px;
-  height: 277px;
-  background: url(../img/carousel.png) no-repeat;
-  background-size: cover;
 }
 
 // small circles below the list of carousel images
@@ -76,7 +73,7 @@
   border-radius: 8px;
   width: 8px;
   height: 8px;
-  margin: 0px 10px 10px 0px;
+  margin: 0px 5px 0px 5px;
 }
 
 // highlight one circle in the carousel indicator
