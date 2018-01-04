@@ -1,0 +1,44 @@
+.portfolios {
+  padding: 0px 0px 300px 0px;
+}
+
+.portfolios__description {
+  text-align: center;
+  // Set the position, because ::after element is absolute position with respect to closes "positioned" element
+  position: relative;
+}
+
+.portfolios__heading {
+  padding: 60px 0px 0px 0px;
+}
+
+.portfolios__text {
+  margin: 0px 200px 0px 200px;
+  position: relative;
+}
+
+.portfolios__text::after {
+  position: relative;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  content: '';
+  height: 7px;
+  width: 80px;
+  background-color: #fd5700;
+}
+
+.portfolios__menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 40px 0px 0px 0px;
+}
+
+.portfolios__item {
+  padding: 0px 20px 0px 20px;
+  display: inline-block;
+}
+
+
