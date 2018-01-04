@@ -41,4 +41,45 @@
   display: inline-block;
 }
 
+// images in the carousel, plus carousel indicator (small circles below the images)
+.portfolios__carousel {
 
+}
+
+// flexbox for images in the carousel
+.portfolios__carousel-list {
+  display: flex;
+  padding: 50px 0px 0px 0px;
+  overflow: auto;
+}
+
+// one image in the carousel
+.portfolios__carousel-item {
+  display: inline-block;
+  width: 341px;
+  height: 277px;
+  background: url(../img/carousel.png) no-repeat;
+  background-size: cover;
+}
+
+// small circles below the list of carousel images
+.portfolios__carousel-indicators {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 0px 0px;
+}
+
+// one small circle in the carousel indicator
+.portfolios__carousel-one-indicator {
+  display: inline-block;
+  background-color: #cccccc;
+  border-radius: 8px;
+  width: 8px;
+  height: 8px;
+  margin: 0px 10px 10px 0px;
+}
+
+// highlight one circle in the carousel indicator
+.portfolios__carousel-indicator-active {
+  background-color: #fd5700;
+}
