@@ -1,7 +1,8 @@
+@import "variables";
+
 .text {
     font-size: 18px;
     line-height: 1.75;
-    margin-bottom: 50px;
     letter-spacing: 0.025em;
 }
 
@@ -12,12 +13,11 @@
 
     .text_level-3 {
         font-size: 16px;
-        line-height: 1.75;
     }
 
     .text_level-4 {
         font-size: 14px;
-        margin-bottom: 5px;
+        line-height: 1;
     }
 
     .text_small-tag {
@@ -26,12 +26,8 @@
         font-variant: small-caps;
     }
 
-    .text-white {
-        color: #fffafa;
-    }
-
-    .text-shadowed {
-        color: rgb(70, 70, 70);
+    .text_color-unimportant {
+        color: @color-text-unimportant;
     }
 
     .text-bold {
