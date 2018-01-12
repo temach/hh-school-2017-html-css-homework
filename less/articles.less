@@ -1,5 +1,6 @@
 .articles {
-  padding: 0px 0px 140px 0px;
+  margin: 0px 0px 140px 0px;
+  position: relative;
 }
 
 .articles__underlay {
@@ -12,10 +13,20 @@
   margin: 0px;
 }
 
-.articles__selected {
+
+.articles__arrow {
+  position: absolute;
+  top: ~"calc(50% - 14px)";
+  right: 20px;
 }
 
-.articles__selected::before {
+.articles__img-arrow {
+}
+
+.articles__item_selected {
+}
+
+.articles__item_selected::before {
   position: absolute;
   content: '';
   top: 0;
