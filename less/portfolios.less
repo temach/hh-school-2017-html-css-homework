@@ -1,79 +1,24 @@
-.portfolios {
-  padding: 0px 0px 0px 0px;
-}
+@import "variables";
 
-.portfolios__description {
+.portfolios {
+  margin: 100px 0 50px 0;
   text-align: center;
-  // Set the position, because ::after element is absolute position with respect to closes "positioned" element
-  position: relative;
-  padding: 60px 0px 0px 0px;
 }
 
 .portfolios__text {
-  margin: 0px 200px 0px 200px;
-  position: relative;
+  width: 70%;
+  margin: 0 auto;
+
+  &:after {
+    display: block;
+    position: relative;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    content: '';
+    height: 7px;
+    width: 80px;
+    background-color: @color-active;
+  }
 }
 
-.portfolios__text::after {
-  position: relative;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  content: '';
-  height: 7px;
-  width: 80px;
-  background-color: #fd5700;
-}
-
-.portfolios__menu {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 40px 0px 0px 0px;
-}
-
-.portfolios__item {
-  padding: 0px 20px 0px 20px;
-  display: inline-block;
-}
-
-// images in the carousel, plus carousel indicator (small circles below the images)
-.portfolios__carousel {
-
-}
-
-// flexbox for images in the carousel
-// use flex to hide margins between images and force them into one row
-.portfolios__carousel-list {
-  display: flex;
-  padding: 50px 0px 0px 0px;
-  overflow: hidden;
-}
-
-// one image in the carousel
-.portfolios__carousel-item {
-  display: inline-block;
-}
-
-// small circles below the list of carousel images
-.portfolios__carousel-indicators {
-  display: flex;
-  justify-content: center;
-  padding: 50px 0px 0px 0px;
-}
-
-// one small circle in the carousel indicator
-.portfolios__carousel-one-indicator {
-  display: inline-block;
-  background-color: #cccccc;
-  border-radius: 8px;
-  width: 8px;
-  height: 8px;
-  margin: 0px 5px 0px 5px;
-}
-
-// highlight one circle in the carousel indicator
-.portfolios__carousel-indicator-active {
-  background-color: #fd5700;
-}

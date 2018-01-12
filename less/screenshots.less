@@ -1,0 +1,56 @@
+@import "variables";
+
+// heading for images,
+// images in the carousel,
+// carousel indicator (small circles below the images)
+.screenshots {
+  margin-bottom: 60px;
+}
+
+.screenshots__menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.screenshots__item {
+  padding: 0 20px;
+  display: inline-block;
+}
+
+// flex hides margins between images and forces them into one row
+.screenshots__carousel-list {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.screenshots__carousel-item {
+  display: inline-block;
+}
+
+.screenshots__img {
+  height: 300px;
+  width: auto;
+}
+
+// small circles below the list of carousel images
+.screenshots__carousel-indicators {
+  display: flex;
+  justify-content: center;
+}
+
+// one small circle in the carousel indicator
+.screenshots__carousel-one-indicator {
+  display: inline-block;
+  background-color: @color-inactive;
+  border-radius: 8px;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+}
+
+.screenshots__carousel-indicator-active {
+  background-color: @color-active;
+}
