@@ -1,27 +1,21 @@
-.lineup {
-  padding: 50px 0px 50px 0px;
-}
+@import "variables";
 
-.lineup__item {
-  padding: 0px 20px 0px 0px;
+.lineup {
+  padding: 50px 0;
   position: relative;
 }
 
-.lineup__item::before {
-  position: absolute;
-  content: '';
-  top: -10px;
-  left: -20px;
-  width: 6px;
-  height: 90px;
-  background-color: #404040;
-}
+.lineup__item {
+  padding-right: 20px;
+  position: relative;
 
-.lineup__img-container {
-  padding: 20px 10px;
-  vertical-align: middle;
-}
-
-.lineup__img {
-  width: 100%;
+  &:before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: -20px;
+    width: 6px;
+    height: ~"calc(100% + 20px)";
+    background-color: @color-text;
+  }
 }

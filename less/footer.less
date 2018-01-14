@@ -7,52 +7,49 @@
 
 .footer__menu {
   list-style: none;
-  justify-content: center;
+  // remove default padding
   padding: 0px 0px 0px 0px;
 }
 
-.footer__menu-item {
-
+.footer__send-link {
+  display: inline-block;
+  padding: 100px 0px 0px 0px;
 }
 
 .footer__link {
-  display: inline-block;
-  color: #ffffff;
-  padding: 100px 0px 0px 0px;
+  color: @color-text-contrast;
 
   &:hover {
-    color: #ffffff;
+    color: @color-text-contrast;
   }
 }
 
 .footer__underlined {
   display: inline-block;
   border:0;
-  background-color: #333333;
-  border-bottom:solid 1px #ffffff;
+  background-color: @color-background-strong;
+  border-bottom:solid 1px @color-text-contrast;
   outline:none;
   width: 100%;
 }
 
-.footer__input-short {
+.footer__input {
   padding: 0px 0px 0px 0px;
+  color: @color-text-contrast;
   width: 100%;
 }
 
-.footer__input-short::placeholder {
-  color: #ffffff;
+.footer__input_long {
+  padding-top: 20px;
 }
 
-.footer__input-long {
-  padding: 20px 0px 0px 0px;
-}
-
+// contains text inputs and send button
 .footer__form {
   padding: 0px 60px 0px 15px;
 }
 
 .footer__last-row {
-  padding: 30px 0px 0px 0px;
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -61,10 +58,10 @@
     position: absolute;
     content: '';
     top: 10px;
-    left: 0px;
+    left: 0;
     width: 100%;
     height: 1px;
-    background-color: #ffffff;
+    background-color: @color-text-contrast;
   }
 }
 

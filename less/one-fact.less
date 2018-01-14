@@ -1,0 +1,28 @@
+
+// one of the four items
+.one-fact {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+  // draw black line between the number and description
+  &:after {
+    position: absolute;
+    content: '';
+    background-color: @color-background-strong;
+    top: ~"calc(50% - 3px)";
+    left: ~"calc(50% - 45px)";
+    width: 90px;
+    height: 6px;
+  }
+}
+
+.one-fact__title {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.one-fact__text {
+  font-size: 23px;
+  margin-bottom: 0px;
+}
